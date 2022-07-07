@@ -22,10 +22,6 @@ const CryptoList = ({ numberOfRows }) => {
     })();
   }, [numberOfRows, currentPageNumber]);
 
-  // console.log(data);
-  console.log("pageStart", pageStart);
-  console.log("pageEnd", pageEnd);
-
   const handlePageRight = () => {
     if (pageStart >= pageEnd) return;
     else {
@@ -50,17 +46,19 @@ const CryptoList = ({ numberOfRows }) => {
 
   return (
     <section className="crypt-list">
+      <hr className="row-line" />
       <div className="headings">
-        <h5 className="favorite">.</h5>
+        {/* <h5 className="favorite"></h5> */}
         <h5 className="market-rank">#</h5>
-        <h5 className="crpyto-data name">NAME</h5>
-        <h5 className="crpyto-data price">PRICE</h5>
-        <h5 className="crpyto-data lastTwentyFourHours">24H &darr;</h5>
-        <h5 className="crpyto-data lastSevenDays">7D</h5>
-        <h5 className="crpyto-data market-cap">MARKET CAP</h5>
-        <h5 className="crpyto-data volume">VOLUME(24H)</h5>
-        <h5 className="crpyto-data circulating-supply">CIRCULATING SUPPLY</h5>
+        <h5 className="crypyto-data name">NAME</h5>
+        <h5 className="crypyto-data price">PRICE</h5>
+        <h5 className="crypyto-data lastTwentyFourHours">24H &darr;</h5>
+        <h5 className="crypyto-data lastSevenDays">7D</h5>
+        <h5 className="crypyto-data market-cap">MARKET CAP</h5>
+        <h5 className="crypyto-data volume">VOLUME(24H)</h5>
+        <h5 className="crypyto-data circulating-supply">CIRCULATING SUPPLY</h5>
       </div>
+      <hr className="row-line" />
       <div className="table">
         {data?.length > 0 ? (
           data?.map((cryptocurrency) => {
@@ -81,20 +79,23 @@ const CryptoList = ({ numberOfRows }) => {
                 <i className="far fa-star favorite"></i>
 
                 <span className="market-rank">{market_cap_rank}</span>
-                <span className="crpyto-data center name">{name}</span>
-                <span className="crpyto-data price">${current_price}</span>
-                <span className="crpyto-data lastTwentyFourHours">
+                <span className="crypyto-data center name">{name}</span>
+                <span className="crypyto-data price">${current_price}</span>
+                <span className="crypyto-data lastTwentyFourHours">
                   {price_change_percentage_24h?.toFixed(3)}%
                 </span>
-                <span className="crpyto-data lastSevenDays">
+                <span className="crypyto-data lastSevenDays">
                   {price_change_percentage_7d_in_currency?.toFixed(3)}%
                 </span>
-                <span className="crpyto-data market-cap">${market_cap}</span>
-                <span className="crpyto-data volume">${total_volume}</span>
-                <span className="crpyto-data circulating-supply">
-                  {circulating_supply} {symbol}
+                <span className="crypyto-data market-cap">${market_cap}</span>
+                <span className="crypyto-data volume">${total_volume}</span>
+                <span className="crypyto-data circulating-supply">
+                  {circulating_supply} {symbol.toUpperCase()}
+                  <hr className="line outerline" />
+                  <hr className="line innerline" />
                 </span>
                 <i className="fas fa-ellipsis-v"></i>
+                <hr className="row-line" />
               </div>
             );
           })
@@ -103,7 +104,11 @@ const CryptoList = ({ numberOfRows }) => {
         )}
       </div>
       <div className="pages">
-        <button disabled={pageStart <= 2} onClick={handlePageLeft}>
+        <button
+          id={pageEnd <= 4 ? `disabled` : `notDisabled`}
+          disabled={pageEnd <= 4}
+          onClick={handlePageLeft}
+        >
           <i className="fas fa-angle-left"></i>
         </button>
         {/* {pageNumber.map((current) => (
@@ -123,7 +128,11 @@ const CryptoList = ({ numberOfRows }) => {
         </button>
         <button onClick={() => setCurrentPageNumber(pageEnd)}>{pageEnd}</button>
 
-        <button disabled={pageEnd >= 8} onClick={handlePageRight}>
+        <button
+          id={pageStart >= 7 ? `disabled` : `notDisabled`}
+          disabled={pageStart >= 7}
+          onClick={handlePageRight}
+        >
           <i className="fas fa-angle-right"></i>
         </button>
       </div>

@@ -8,8 +8,10 @@ function App() {
     <div className="App">
       <Navbar />
       <Portfolios />
-      <div className="heading">Top 100 Cryptocurrencies by Market Cap</div>
-      <Cryptos />
+      <div className="cryptoCurrency">
+        <h3 className="heading">Top 100 Cryptocurrencies by Market Cap</h3>
+        <Cryptos />
+      </div>
     </div>
   );
 }

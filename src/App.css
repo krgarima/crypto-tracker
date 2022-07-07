@@ -10,7 +10,20 @@
   align-items: center;
 }
 
+.flex-coloumn {
+  display: flex;
+  flex-direction: column;
+}
+
 .space-between {
   display: flex;
   justify-content: space-between;
+}
+
+.cryptoCurrency {
+  margin-top: 25vh;
+}
+
+.heading {
+  margin: 0 10rem;
 }

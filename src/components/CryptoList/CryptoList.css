@@ -5,7 +5,7 @@
 
 .headings {
   display: flex;
-  margin: 2rem;
+  margin: 8px 0 8px 4.2rem;
 }
 
 .table {
@@ -13,14 +13,14 @@
 }
 
 .favorite {
-  display: inline-block;
-  width: 5rem;
+  /* display: inline-block; */
+  /* width: 5rem; */
 }
 
 .fa-star {
-  padding-left: 10px;
-  margin-right: 1rem;
-  color: gray;
+  /* padding-left: 10px;
+  margin-right: 1rem; */
+  color: lightgray;
 }
 
 .market-rank,
@@ -30,13 +30,18 @@
 }
 
 .fa-ellipsis-v {
-  margin-left: 3rem;
+  color: gray;
 }
 
-.crpyto-data {
+.crypyto-data {
   display: inline-block;
   min-width: 11rem;
   padding: 5px 0;
+}
+
+.price {
+  display: inline-block;
+  width: 6rem;
 }
 
 .lastTwentyFourHours,
@@ -49,4 +54,61 @@
   color: gray;
   top: 70%;
   left: 50%;
+}
+
+.line {
+  padding: 2px;
+  border: none;
+  position: absolute;
+  margin-top: 2px;
+}
+
+.outerline {
+  width: 8rem;
+  background-color: #eff2f5;
+}
+
+.innerline {
+  width: 6rem;
+  background-color: #cfd6e4;
+}
+
+.row-line {
+  background-color: #eff2f5;
+  border: none;
+  height: 1px;
+  margin: 1rem 0;
+}
+
+.pages {
+  margin: 1rem 0;
+  position: absolute;
+  right: 0;
+  padding-bottom: 2rem;
+}
+
+.pages button {
+  border: none;
+  border-radius: 4px;
+  width: 24px;
+  height: 22px;
+  margin-right: 5px;
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid #dfe3e8;
+  border-radius: 4px;
+}
+
+.pages button:hover {
+  border: 1px solid #0052fe;
+}
+
+#disabled {
+  background: #919eab;
+  opacity: 0.5;
+  color: white;
+}
+
+#notDisabled {
+  color: #919eab;
 }

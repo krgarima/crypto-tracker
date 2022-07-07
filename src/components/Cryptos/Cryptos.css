@@ -1,4 +1,33 @@
 .crypto-container {
   min-height: 50vh;
-  /* border: 1px solid black; */
+  margin: 0 10rem;
+}
+
+.select-container {
+  margin: 1rem 0;
+}
+
+.select-container button,
+#show-rows {
+  border: none;
+  margin: 5px;
+  padding: 5px 1rem;
+  border-radius: 8px;
+  background-color: #eff2f5;
+  color: #5b667c;
+}
+
+#show-rows {
+  padding: 5px;
+  color: black;
+}
+
+.select-container .fa-star .favorite {
+  /* width: 0rem;
+  margin: 0;
+  padding: 0; */
+}
+
+.select-container label {
+  color: #5b667c;
 }

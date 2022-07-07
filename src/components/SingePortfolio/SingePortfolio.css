@@ -1,20 +1,22 @@
 .portfolio-box {
-  height: 132.96336364746094px;
-  width: 449.1206970214844px;
-  /* left: 178px;
-  top: 93px; */
+  height: 8rem;
+  width: 26rem;
   border-radius: 12px;
   background-color: #ffffff;
   box-shadow: 0px 1.4773707389831543px 17.72844696044922px 4.432111740112305px
     #d0d6e34d;
 
   display: flex;
+  margin: 0 5px;
 }
 
 .portfolio-box img {
   height: 100px;
   width: 100px;
-  /* left: 198px;
-  top: 111px; */
-  /* border-radius: 0px; */
+  margin: 1rem;
+}
+
+.details {
+  flex-direction: column;
+  margin: 2rem;
 }

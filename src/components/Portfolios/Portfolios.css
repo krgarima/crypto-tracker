@@ -1,5 +1,11 @@
 .portfolios {
-  height: 20vh;
   display: flex;
-  /* border: 1px solid green; */
+  position: absolute;
+  top: 3.8rem;
+  left: 7rem;
+  background: linear-gradient(
+    180deg,
+    #f8fafc 0%,
+    rgba(248, 250, 252, 0) 170.94%
+  );
 }

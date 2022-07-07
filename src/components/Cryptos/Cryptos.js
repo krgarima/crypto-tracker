@@ -14,7 +14,9 @@ const Cryptos = () => {
     <div className="crypto-container">
       <div className="select-container space-between">
         <span>
-          <button>Favourites</button>
+          <button>
+            <i className="far fa-star favorite"></i>Favourites
+          </button>
           <button>CryptoCurrencies</button>
           <button>DeFi</button>
           <button>NFTs & Collectibles</button>
