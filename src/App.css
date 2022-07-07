@@ -27,3 +27,9 @@
 .heading {
   margin: 0 10rem;
 }
+
+@media only screen and (max-width: 1000px) {
+  .heading {
+    margin: 0 8rem;
+  }
+}

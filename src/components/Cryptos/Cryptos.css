@@ -22,12 +22,35 @@
   color: black;
 }
 
-.select-container .fa-star .favorite {
-  /* width: 0rem;
-  margin: 0;
-  padding: 0; */
-}
-
 .select-container label {
   color: #5b667c;
+}
+
+.select-container button.selected {
+  color: #3861fb;
+}
+
+@media only screen and (max-width: 1500px) {
+  .crypto-container {
+    margin: 0 7rem;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .crypto-container {
+    margin: 0 3rem;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .crypto-container {
+    margin: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .crypto-container {
+    margin: 0;
+  }
 }

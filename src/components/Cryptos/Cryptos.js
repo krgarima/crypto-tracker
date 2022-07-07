@@ -17,7 +17,7 @@ const Cryptos = () => {
           <button>
             <i className="far fa-star favorite"></i>Favourites
           </button>
-          <button>CryptoCurrencies</button>
+          <button className="selected">CryptoCurrencies</button>
           <button>DeFi</button>
           <button>NFTs & Collectibles</button>
         </span>

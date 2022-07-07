@@ -44,19 +44,23 @@ const CryptoList = ({ numberOfRows }) => {
     }
   };
 
+  const isHigh = (value) => {
+    return value >= 0 ? true : false;
+  };
+
   return (
-    <section className="crypt-list">
+    <section className="crypto-list">
       <hr className="row-line" />
       <div className="headings">
         {/* <h5 className="favorite"></h5> */}
         <h5 className="market-rank">#</h5>
-        <h5 className="crypyto-data name">NAME</h5>
-        <h5 className="crypyto-data price">PRICE</h5>
-        <h5 className="crypyto-data lastTwentyFourHours">24H &darr;</h5>
-        <h5 className="crypyto-data lastSevenDays">7D</h5>
-        <h5 className="crypyto-data market-cap">MARKET CAP</h5>
-        <h5 className="crypyto-data volume">VOLUME(24H)</h5>
-        <h5 className="crypyto-data circulating-supply">CIRCULATING SUPPLY</h5>
+        <h5 className="crypto-data name">NAME</h5>
+        <h5 className="crypto-data price">PRICE</h5>
+        <h5 className="crypto-data lastTwentyFourHours">24H &uarr;</h5>
+        <h5 className="crypto-data lastSevenDays">7D</h5>
+        <h5 className="crypto-data market-cap">MARKET CAP</h5>
+        <h5 className="crypto-data volume">VOLUME(24H)</h5>
+        <h5 className="crypto-data circulating-supply">CIRCULATING SUPPLY</h5>
       </div>
       <hr className="row-line" />
       <div className="table">
@@ -64,6 +68,7 @@ const CryptoList = ({ numberOfRows }) => {
           data?.map((cryptocurrency) => {
             const {
               id,
+              image,
               name,
               current_price,
               market_cap_rank,
@@ -79,17 +84,42 @@ const CryptoList = ({ numberOfRows }) => {
                 <i className="far fa-star favorite"></i>
 
                 <span className="market-rank">{market_cap_rank}</span>
-                <span className="crypyto-data center name">{name}</span>
-                <span className="crypyto-data price">${current_price}</span>
-                <span className="crypyto-data lastTwentyFourHours">
-                  {price_change_percentage_24h?.toFixed(3)}%
+                <span className="crypto-data center name">
+                  <img src={image} alt="currency" />
+                  {name} <span className="symbol">{symbol.toUpperCase()}</span>
                 </span>
-                <span className="crypyto-data lastSevenDays">
-                  {price_change_percentage_7d_in_currency?.toFixed(3)}%
+                <span className="crypto-data price">${current_price}</span>
+                <span
+                  className={`crypto-data lastTwentyFourHours ${
+                    isHigh(price_change_percentage_24h) ? "up" : "down"
+                  }`}
+                >
+                  <i
+                    className={`fas fa-caret-${
+                      isHigh(price_change_percentage_24h) ? "up" : "down"
+                    }`}
+                  ></i>
+                  {price_change_percentage_24h?.toFixed(2)}%
                 </span>
-                <span className="crypyto-data market-cap">${market_cap}</span>
-                <span className="crypyto-data volume">${total_volume}</span>
-                <span className="crypyto-data circulating-supply">
+                <span
+                  className={`crypto-data lastSevenDays ${
+                    isHigh(price_change_percentage_7d_in_currency)
+                      ? "up"
+                      : "down"
+                  }`}
+                >
+                  <i
+                    className={`fas fa-caret-${
+                      isHigh(price_change_percentage_7d_in_currency)
+                        ? "up"
+                        : "down"
+                    }`}
+                  ></i>
+                  {price_change_percentage_7d_in_currency?.toFixed(2)}%
+                </span>
+                <span className="crypto-data market-cap">${market_cap}</span>
+                <span className="crypto-data volume">${total_volume}</span>
+                <span className="crypto-data circulating-supply">
                   {circulating_supply} {symbol.toUpperCase()}
                   <hr className="line outerline" />
                   <hr className="line innerline" />
