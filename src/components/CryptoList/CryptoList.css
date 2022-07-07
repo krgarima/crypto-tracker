@@ -1,0 +1,52 @@
+.crypt-list {
+  font-size: 0.8em;
+  position: relative;
+}
+
+.headings {
+  display: flex;
+  margin: 2rem;
+}
+
+.table {
+  margin: 0 1rem;
+}
+
+.favorite {
+  display: inline-block;
+  width: 5rem;
+}
+
+.fa-star {
+  padding-left: 10px;
+  margin-right: 1rem;
+  color: gray;
+}
+
+.market-rank,
+.favorite {
+  display: inline-block;
+  width: 3rem;
+}
+
+.fa-ellipsis-v {
+  margin-left: 3rem;
+}
+
+.crpyto-data {
+  display: inline-block;
+  min-width: 11rem;
+  padding: 5px 0;
+}
+
+.lastTwentyFourHours,
+.lastSevenDays {
+  min-width: 5rem;
+}
+
+.fa-circle-notch {
+  position: absolute;
+  color: gray;
+  top: 70%;
+  left: 50%;
+}
