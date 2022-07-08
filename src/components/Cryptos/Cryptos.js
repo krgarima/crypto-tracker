@@ -24,13 +24,13 @@ const Cryptos = () => {
         <span>
           <label htmlFor="show-rows">show rows</label>
 
-          <select name="show-rows" id="show-rows">
+          <select
+            name="show-rows"
+            id="show-rows"
+            onChange={(e) => setNumberOfRows(e.target.value)}
+          >
             {rowvalues.map((i) => (
-              <option
-                key={i}
-                value="numberOfRows"
-                onClick={() => setNumberOfRows(i)}
-              >
+              <option key={i} value={i}>
                 {i}
               </option>
             ))}

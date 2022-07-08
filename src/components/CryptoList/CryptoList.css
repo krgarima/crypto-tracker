@@ -1,4 +1,5 @@
 .crypto-list {
+  /* min-height: 100vh; */
   font-size: 0.8em;
   position: relative;
 }
