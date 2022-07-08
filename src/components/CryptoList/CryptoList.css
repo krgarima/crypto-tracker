@@ -6,6 +6,7 @@
 .headings {
   display: flex;
   margin: 8px 0 8px 4.2rem;
+  width: 70rem;
 }
 
 .table {
@@ -59,15 +60,16 @@
 }
 
 .lastTwentyFourHours,
-.lastSevenDays {
-  min-width: 5rem;
+.lastSevenDays,
+.price {
+  min-width: 6rem;
 }
 
 .fa-circle-notch {
   position: absolute;
   color: gray;
-  top: 70%;
-  left: 50%;
+  top: 30vh;
+  left: 40vw;
 }
 
 .line {
@@ -125,4 +127,34 @@
 
 #notDisabled {
   color: #919eab;
+}
+
+.row {
+  width: 70rem;
+}
+
+@media only screen and (max-width: 1150px) {
+  .crypto-data {
+    display: inline-block;
+    /* min-width: 10.8rem; */
+    padding: 2px 0;
+  }
+  .lastTwentyFourHours,
+  .lastSevenDays,
+  .price {
+    min-width: 5rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .crypto-data {
+    display: inline-block;
+    /* min-width: 10.5rem; */
+    padding: 2px 0;
+  }
+  .lastTwentyFourHours,
+  .lastSevenDays,
+  .price {
+    min-width: 5rem;
+  }
 }

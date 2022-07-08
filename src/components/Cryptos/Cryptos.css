@@ -5,6 +5,7 @@
 
 .select-container {
   margin: 1rem 0;
+  width: 75rem;
 }
 
 .select-container button,
@@ -15,6 +16,7 @@
   border-radius: 8px;
   background-color: #eff2f5;
   color: #5b667c;
+  cursor: pointer;
 }
 
 #show-rows {
@@ -50,7 +52,7 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  .crypto-container {
+  /* .crypto-container {
     margin: 0;
-  }
+  } */
 }

@@ -1,5 +1,6 @@
 .navbar {
   height: 6vh;
+  width: 100vw;
   padding: 8px;
   box-shadow: 0px 1.4773707389831543px 17.72844696044922px 4.432111740112305px
     #d0d6e34d;
@@ -22,4 +23,43 @@
 .company-logo,
 .icons {
   margin: 0 10rem;
+}
+
+#bar-small {
+  display: none;
+}
+
+@media only screen and (max-width: 1500px) {
+  .company-logo,
+  .icons {
+    margin: 0 7rem;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .company-logo,
+  .icons {
+    margin: 0 3rem;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .company-logo,
+  .icons {
+    margin: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #bar-small {
+    display: block;
+    margin-top: 5px;
+  }
+  #bar-big {
+    display: none;
+  }
+  .company-logo {
+    width: 12rem;
+  }
 }

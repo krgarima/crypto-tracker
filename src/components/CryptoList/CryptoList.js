@@ -80,7 +80,7 @@ const CryptoList = ({ numberOfRows }) => {
               symbol,
             } = cryptocurrency;
             return (
-              <div key={id}>
+              <div className="row" key={id}>
                 <i className="far fa-star favorite"></i>
 
                 <span className="market-rank">{market_cap_rank}</span>

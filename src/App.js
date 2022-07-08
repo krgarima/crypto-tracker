@@ -5,7 +5,7 @@ import Cryptos from "./components/Cryptos/Cryptos";
 
 function App() {
   return (
-    <div className="App">
+    <div id="App">
       <Navbar />
       <Portfolios />
       <div className="cryptoCurrency">
