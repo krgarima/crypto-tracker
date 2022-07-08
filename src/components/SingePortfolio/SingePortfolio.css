@@ -147,7 +147,7 @@
 }
 @media only screen and (max-width: 415px) {
   .portfolio-box {
-    height: 8rem;
+    height: 10rem;
     width: 17rem;
   }
   .details {
@@ -160,7 +160,7 @@
 }
 @media only screen and (max-width: 390px) {
   .portfolio-box {
-    height: 8rem;
+    height: 10rem;
     width: 14rem;
   }
   .portfolios {

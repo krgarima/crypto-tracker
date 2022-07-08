@@ -1,5 +1,4 @@
 .crypto-list {
-  /* min-height: 100vh; */
   font-size: 0.8em;
   position: relative;
 }
@@ -113,7 +112,6 @@
   background: #ffffff;
   border: 1px solid #dfe3e8;
   border-radius: 4px;
-  /* z-index: 1; */
 }
 
 .pages button:hover {
@@ -155,5 +153,12 @@
   .lastSevenDays,
   .price {
     min-width: 5rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .market-rank,
+  .favorite {
+    width: 1.5rem;
   }
 }
