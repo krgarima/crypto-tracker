@@ -32,9 +32,15 @@
   margin: 0 10rem;
 }
 
-#App {
+.container {
   min-height: 100vh;
-  overflow-x: hidden;
+  width: 98vw;
+  overflow: hidden;
+}
+
+#App {
+  height: auto;
+  width: auto;
 }
 
 @media only screen and (max-width: 1500px) {

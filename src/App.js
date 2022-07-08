@@ -5,12 +5,14 @@ import Cryptos from "./components/Cryptos/Cryptos";
 
 function App() {
   return (
-    <div id="App">
-      <Navbar />
-      <Portfolios />
-      <div className="cryptoCurrency">
-        <h3 className="heading">Top 100 Cryptocurrencies by Market Cap</h3>
-        <Cryptos />
+    <div className="container">
+      <div id="App">
+        <Navbar />
+        <Portfolios />
+        <div className="cryptoCurrency">
+          <h3 className="heading">Top 100 Cryptocurrencies by Market Cap</h3>
+          <Cryptos />
+        </div>
       </div>
     </div>
   );
