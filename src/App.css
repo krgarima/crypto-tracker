@@ -35,7 +35,6 @@
 .container {
   min-height: 100vh;
   width: 98vw;
-  overflow-x: hidden;
 }
 
 #App {
@@ -59,5 +58,11 @@
 @media only screen and (max-width: 1300px) {
   .heading {
     margin: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .container {
+    overflow: hidden;
   }
 }
