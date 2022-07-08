@@ -56,7 +56,7 @@ const CryptoList = ({ numberOfRows }) => {
       <hr className="row-line" />
       <div className="headings">
         <h5 className="market-rank">#</h5>
-        <h5 className="crypto-data name">NAME</h5>
+        <h5 className="crypto-data">NAME</h5>
         <h5 className="crypto-data price">PRICE</h5>
         <h5 className="crypto-data lastTwentyFourHours">24H &uarr;</h5>
         <h5 className="crypto-data lastSevenDays">7D</h5>
