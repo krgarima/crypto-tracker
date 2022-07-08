@@ -52,7 +52,6 @@
 .fa-caret-up {
   position: relative;
   right: 5px;
-  /* margin: 0 5px; */
 }
 
 .symbol {
@@ -136,7 +135,6 @@
 @media only screen and (max-width: 1150px) {
   .crypto-data {
     display: inline-block;
-    /* min-width: 10.8rem; */
     padding: 2px 0;
   }
   .lastTwentyFourHours,
@@ -149,7 +147,6 @@
 @media only screen and (max-width: 1100px) {
   .crypto-data {
     display: inline-block;
-    /* min-width: 10.5rem; */
     padding: 2px 0;
   }
   .lastTwentyFourHours,

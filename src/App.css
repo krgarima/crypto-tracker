@@ -10,6 +10,10 @@
   align-items: center;
 }
 
+.flex {
+  display: flex;
+}
+
 .flex-coloumn {
   display: flex;
   flex-direction: column;
@@ -21,29 +25,17 @@
 }
 
 .cryptoCurrency {
-  margin-top: 25vh;
+  margin-top: 3rem;
 }
 
 .heading {
   margin: 0 10rem;
 }
 
-/* #App {
+#App {
   min-height: 100vh;
-  width: 100vw;
-} */
-
-@media only screen and (max-width: 1150px) {
-  /* .cryptoCurrency {
-    overflow: hidden;
-  } */
+  overflow-x: hidden;
 }
-/* 
-@media only screen and (max-width: 1000px) {
-  .heading {
-    margin: 0 8rem;
-  }
-} */
 
 @media only screen and (max-width: 1500px) {
   .heading {

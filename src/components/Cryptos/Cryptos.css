@@ -5,7 +5,7 @@
 
 .select-container {
   margin: 1rem 0;
-  width: 75rem;
+  width: 85vw;
 }
 
 .select-container button,
@@ -49,10 +49,4 @@
   .crypto-container {
     margin: 0 1rem;
   }
-}
-
-@media only screen and (max-width: 1200px) {
-  /* .crypto-container {
-    margin: 0;
-  } */
 }

@@ -1,18 +1,18 @@
 .portfolios {
   display: flex;
-  position: absolute;
-  top: 4.5rem;
-  left: 7rem;
+  margin: 2rem 0 0 8rem;
   background: linear-gradient(
     180deg,
     #f8fafc 0%,
     rgba(248, 250, 252, 0) 170.94%
   );
+  position: relative;
+  max-width: 78rem;
 }
 
 .nav-portfolio {
   position: absolute;
-  top: 3.2rem;
+  margin-top: 3.2rem;
   color: #a8b0c1;
 }
 
@@ -21,24 +21,28 @@
 }
 
 .fa-chevron-circle-right {
-  position: absolute;
   right: -1.5rem;
 }
 
 @media only screen and (max-width: 850px) {
   .portfolios {
-    left: 14rem;
+    left: 6rem;
   }
 }
 
 @media only screen and (max-width: 700px) {
   .portfolios {
-    left: 10rem;
+    left: 0rem;
   }
 }
 
 @media only screen and (max-width: 550px) {
   .portfolios {
-    left: 4rem;
+    left: -2.5rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .portfolios {
+    left: -3.2rem;
   }
 }

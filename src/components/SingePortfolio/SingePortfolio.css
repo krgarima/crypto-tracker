@@ -30,11 +30,17 @@
     height: 8.5rem;
     width: 23rem;
   }
+  .portfolios {
+    width: 69rem;
+  }
 }
 @media only screen and (max-width: 1300px) {
   .portfolio-box {
     height: 8.5rem;
     width: 21rem;
+  }
+  .portfolios {
+    width: 63rem;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -42,11 +48,17 @@
     width: 19rem;
     font-size: 0.8em;
   }
+  .portfolios {
+    width: 57rem;
+  }
 }
 @media only screen and (max-width: 1100px) {
   .portfolio-box {
     width: 17rem;
     font-size: 0.8em;
+  }
+  .portfolios {
+    width: 51rem;
   }
   .details {
     margin: 2rem 1rem;
@@ -56,6 +68,9 @@
   .portfolio-box {
     width: 15rem;
     font-size: 0.8em;
+  }
+  .portfolios {
+    width: 45rem;
   }
   .details {
     margin: 2rem 0rem;
@@ -77,6 +92,9 @@
     height: 100px;
     width: 80px;
   }
+  .portfolios {
+    width: 42rem;
+  }
 }
 @media only screen and (max-width: 850px) {
   #hidePortfolio {
@@ -94,17 +112,36 @@
   .details {
     margin: 2rem;
   }
+  .portfolios {
+    width: 26rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio-box {
+    height: 8rem;
+    width: 22rem;
+  }
+  .portfolios {
+    width: 22rem;
+  }
 }
 
 @media only screen and (max-width: 500px) {
   .portfolio-box {
     height: 8rem;
-    width: 22rem;
+    width: 19rem;
+  }
+  .portfolios {
+    width: 19rem;
   }
 }
 @media only screen and (max-width: 460px) {
   .portfolio-box {
     height: 8rem;
+    width: 19rem;
+  }
+  .portfolios {
     width: 19rem;
   }
 }
@@ -115,12 +152,18 @@
   }
   .details {
     flex-direction: column;
-    margin: 1.5rem 1rem;
+    margin: 1rem 0.6rem;
+  }
+  .portfolios {
+    width: 17rem;
   }
 }
 @media only screen and (max-width: 390px) {
   .portfolio-box {
     height: 8rem;
-    width: 15.5rem;
+    width: 14rem;
+  }
+  .portfolios {
+    width: 14rem;
   }
 }

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { data } from "../../backend/db/portfolioDb";
 import SingePortfolio from "../SingePortfolio/SingePortfolio";
 import "./Portfolios.css";
+import "../SingePortfolio/SingePortfolio.css";
 
 const Portfolios = () => {
   const [showPortfolioID, setShowPortfolioID] = useState(1);

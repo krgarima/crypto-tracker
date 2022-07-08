@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Popup from "../Popup/Popup";
 import "./CryptoList.css";
+import "../Popup/Popup.css";
 
 const CryptoList = ({ numberOfRows }) => {
-  // const pageNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   const [data, setData] = useState([]);
   const [currentPageNumber, setCurrentPageNumber] = useState(1);
   const [pageStart, setPageStart] = useState(1);
   const [pageEnd, setPageEnd] = useState(10);
+  const [showPopUp, setShowPopUp] = useState(false);
+  const [cryptoDetails, setCryptoDetails] = useState({});
 
   useEffect(() => {
     (async () => {
@@ -52,7 +55,6 @@ const CryptoList = ({ numberOfRows }) => {
     <section className="crypto-list">
       <hr className="row-line" />
       <div className="headings">
-        {/* <h5 className="favorite"></h5> */}
         <h5 className="market-rank">#</h5>
         <h5 className="crypto-data name">NAME</h5>
         <h5 className="crypto-data price">PRICE</h5>
@@ -80,7 +82,14 @@ const CryptoList = ({ numberOfRows }) => {
               symbol,
             } = cryptocurrency;
             return (
-              <div className="row" key={id}>
+              <div
+                className="row"
+                key={id}
+                onClick={() => {
+                  setCryptoDetails(cryptocurrency);
+                  setShowPopUp(true);
+                }}
+              >
                 <i className="far fa-star favorite"></i>
 
                 <span className="market-rank">{market_cap_rank}</span>
@@ -141,11 +150,6 @@ const CryptoList = ({ numberOfRows }) => {
         >
           <i className="fas fa-angle-left"></i>
         </button>
-        {/* {pageNumber.map((current) => (
-          <button key={current} onClick={() => setCurrentPageNumber(current)}>
-            {current}
-          </button>
-        ))} */}
         <button onClick={() => setCurrentPageNumber(pageStart)}>
           {pageStart}
         </button>
@@ -166,6 +170,15 @@ const CryptoList = ({ numberOfRows }) => {
           <i className="fas fa-angle-right"></i>
         </button>
       </div>
+      {showPopUp ? (
+        <Popup
+          cryptoDetails={cryptoDetails}
+          setShowPopUp={setShowPopUp}
+          isHigh={isHigh}
+        />
+      ) : (
+        ""
+      )}
     </section>
   );
 };

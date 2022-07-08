@@ -1,11 +1,9 @@
 import React from "react";
-
 import "./SingePortfolio.css";
 
 const SingePortfolio = ({ portfolioData, showPortfolioID }) => {
   const { _id, path, title, description } = portfolioData;
-  console.log("showPortfolioID", showPortfolioID);
-  console.log("id", _id);
+
   return (
     <div
       className="portfolio-box"
